@@ -71,6 +71,4 @@ group :test do
   gem "webdrivers"
 end
 
-gem 'db-mariadb', '~> 0.10.0'
-
 gem 'mysql2'
