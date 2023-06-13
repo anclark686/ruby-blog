@@ -23,6 +23,10 @@ body {
     align-items: center;
 }
 
+.header a {
+    text-decoration: none;
+}
+
 .header a, footer a {
     color: white;
 }
@@ -33,16 +37,150 @@ footer {
     text-align: center;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
+}
+
+.page-header {
+    margin-top: 25px;
 }
 
 .article_container {
     background-color: white;
+    border: 1px solid gray;
     width: 50%;
     margin: 20px auto;
+    border-radius: 10px;
+    max-height: 75%;
 }
 
 .articles {
     list-style: none;
+    padding: 25px;
+}
+
+.articles li {
+    padding: 10px 0px;
+}
+
+.count {
+    text-align: center;
+    padding: 20px;
+}
+
+.btn-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.new-btn {
+    border-radius: 5px;
+    height: 50px;
+    width: 150px;
+    font-size: large;
+    background-color: rgb(38, 203, 240);
+}
+
+.form {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 25px;
+}
+
+#article_title, #comment_commenter {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    margin-top: 20px;
+}
+
+#article_body, #comment_body {
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 200px;
+    width: 500px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.status {
+    margin-top: 20px;
+}
+
+#article_status, #comment_status {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-submit input {
+    margin-top: 38px;
+    border-radius: 5px;
+    height: 50px;
+    width: 150px;
+    font-size: large;
+    background-color: rgb(38, 203, 240);
+}
+
+.article_body {
+    text-align: center;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px auto;
+    height: 200px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.modifier-btns {
+    text-align: center;
+    margin: 30px;
+}
+
+.edit-btn, .del-btn {
+    border-radius: 5px;
+    height: 25px;
+    width: 75px;
+    font-size: large;
+    background-color: rgb(38, 203, 240);
+}
+
+.comment-header {
+    margin: 20px;
+}
+
+.add-comment {
+    margin-bottom: 20px;
+}
+
+.no-comment {
+    text-align: center;
+    margin: 30px;
+}
+
+.comment {
+    margin: 30px auto;
+    background-color: lightcyan;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 50%;
+    padding: 20px;
+}
+
+.comment-body {
+    margin-bottom: 10px;
 }

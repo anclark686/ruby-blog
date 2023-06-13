@@ -1,17 +1,23 @@
-<h1><%= @article.title %></h1>
+<h1 class="page-header"><%= @article.title %></h1>
 
-<p><%= @article.body %></p>
+<p class="article_body"><%= @article.body %></p>
 
-<ul>
-  <li><%= link_to "Edit", edit_article_path(@article) %></li>
-  <li><%= link_to "Destroy", article_path(@article), data: {
-                    turbo_method: :delete,
-                    turbo_confirm: "Are you sure?"
-                  } %></li>
-</ul>
+<div class="modifier-btns">
+  <%= link_to "<button class='edit-btn'>Edit</button>".html_safe, 
+        edit_article_path(@article) %>
+  <span> | <span>
+  <%= link_to "<button class='del-btn'>Delete</button>".html_safe, 
+        article_path(@article), data: {
+                      turbo_method: :delete,
+                      turbo_confirm: "Are you sure?"
+                    } %>
+</div>
 
-<h2>Comments</h2>
-<%= render @article.comments %>
-
-<h2>Add a comment:</h2>
+<hr />
+<h2 class="comment-header">Comments</h2>
+<% if @article.comments.count != 0 %>
+  <%= render @article.comments %>
+<% else %>
+  <p class="no-comment">No comments to display</p>
+<% end %>
 <%= render 'comments/form' %>

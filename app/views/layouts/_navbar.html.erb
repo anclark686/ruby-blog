@@ -1,8 +1,14 @@
 <header>
     <div class="header">
-        <h1>Header</h1>
+        <div class="brand">
+            <%= link_to "<h1 class='main-header'>Reyaly Blog</h1>".html_safe, root_path %>
+            <p>✨Ruby Edition✨</p>
+        </div>
+        
+
         <div class="nav-links">
             <%= link_to "Home", root_path %>
+            <span> | <span>
             <%= link_to "New Article", new_article_path %>
         </div>
     </div>

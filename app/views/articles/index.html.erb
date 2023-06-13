@@ -12,7 +12,9 @@
     <% end %>
   </ul>
 
-  <p>Article count: <%= Article.public_count %> <p>
+  <p class="count">Article count: <%= Article.public_count %> <p>
 </div>
 
-<button id="new_btn" ><%= link_to "New Article", new_article_path %></button>
+<div class="btn-container">
+  <%= link_to "<button class='new-btn'>New Article</button>".html_safe, new_article_path %>
+</div>
